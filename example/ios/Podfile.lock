@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - matomo_tracker (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - matomo_tracker (from `.symlinks/plugins/matomo_tracker/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  matomo_tracker:
+    :path: ".symlinks/plugins/matomo_tracker/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
+  matomo_tracker: c6142e38f818040adb3a9c966f62e50ad51e3922
+
+PODFILE CHECKSUM: 9586126c45c4f7be6b7fbad78125a5709502de99
+
+COCOAPODS: 1.10.0
