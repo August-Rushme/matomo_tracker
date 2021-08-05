@@ -9,6 +9,7 @@ class MatomoTracker {
   static Future<String> initializeTracker(String siteId) async {
     Map<String, dynamic> args ={};
     args.putIfAbsent('siteId', () => siteId);
+    args.putIfAbsent('userId', () => '00000000');
     final String result = await _channel.invokeMethod('initializeTracker', args);
     return result;
   }

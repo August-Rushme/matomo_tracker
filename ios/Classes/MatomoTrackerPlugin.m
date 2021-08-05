@@ -18,11 +18,14 @@
         NSString *siteId = [dic objectForKey:@"siteId"];
         NSString *userId = [dic objectForKey:@"userId"];
         [TrackerTool setSitId:siteId];
+      
         //NSString *uuidStr = [NSString stringWithFormat:@"UUID/%@",[ECUUIDTool getUUIDInKeychain]];
         //[TrackerTool addTrackView:@[uuidStr]];
         if (userId != nil && userId.length > 0) {
           [TrackerTool setUserId:userId];
+            
         }
+      NSLog(@"initializeTracker %@ %@",siteId,userId);
     } else if ([@"trackScreen" isEqualToString:call.method]){
     //
         NSDictionary *dic = [NSDictionary dictionaryWithDictionary:call.arguments];
@@ -31,6 +34,8 @@
         NSString *userId = [dic objectForKey:@"userId"];
         NSArray *views = [NSArray arrayWithObjects:title, nil];
         [TrackerTool addTrackView:views url:[NSURL URLWithString:urlStr]];
+        
+        NSLog(@"trackScreen %@",title);
 
     } else if ([@"trackEvent" isEqualToString:call.method]){
         NSDictionary *dic = [NSDictionary dictionaryWithDictionary:call.arguments];

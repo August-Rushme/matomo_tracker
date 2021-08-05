@@ -26,8 +26,9 @@ class _MyAppState extends State<MyApp> {
 
 
     MatomoTracker.initializeTracker("294");
-
+    MatomoTracker.trackScreen('shouye', 'urlStr', '');
     return MaterialApp(
+
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Plugin example app'),
