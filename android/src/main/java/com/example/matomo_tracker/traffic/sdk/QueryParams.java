@@ -1,7 +1,7 @@
 
 package com.example.matomo_tracker.traffic.sdk;
 
-import com.wdit.matomo_plugin.traffic.sdk.extra.CustomDimension;
+import com.example.matomo_tracker.traffic.sdk.extra.CustomDimension;
 
 /**
  * Query parameters supported by the tracking HTTP API.

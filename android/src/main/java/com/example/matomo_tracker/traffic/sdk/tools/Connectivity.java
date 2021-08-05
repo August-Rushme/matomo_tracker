@@ -5,9 +5,9 @@ import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
-import static com.wdit.matomo_plugin.traffic.sdk.tools.Connectivity.Type.MOBILE;
-import static com.wdit.matomo_plugin.traffic.sdk.tools.Connectivity.Type.NONE;
-import static com.wdit.matomo_plugin.traffic.sdk.tools.Connectivity.Type.WIFI;
+import static com.example.matomo_tracker.traffic.sdk.tools.Connectivity.Type.MOBILE;
+import static com.example.matomo_tracker.traffic.sdk.tools.Connectivity.Type.NONE;
+import static com.example.matomo_tracker.traffic.sdk.tools.Connectivity.Type.WIFI;
 
 public class Connectivity {
     private final ConnectivityManager mConnectivityManager;

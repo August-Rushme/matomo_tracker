@@ -6,10 +6,10 @@ import android.content.SharedPreferences;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 
-import com.wdit.matomo_plugin.traffic.sdk.dispatcher.DispatchMode;
-import com.wdit.matomo_plugin.traffic.sdk.dispatcher.Dispatcher;
-import com.wdit.matomo_plugin.traffic.sdk.dispatcher.Packet;
-import com.wdit.matomo_plugin.traffic.sdk.tools.Objects;
+import com.example.matomo_tracker.traffic.sdk.dispatcher.DispatchMode;
+import com.example.matomo_tracker.traffic.sdk.dispatcher.Dispatcher;
+import com.example.matomo_tracker.traffic.sdk.dispatcher.Packet;
+import com.example.matomo_tracker.traffic.sdk.tools.Objects;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
