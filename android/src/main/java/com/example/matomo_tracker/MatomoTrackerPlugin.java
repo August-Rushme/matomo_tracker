@@ -30,6 +30,7 @@ public class MatomoTrackerPlugin implements FlutterPlugin, MethodCallHandler {
   private MethodChannel channel;
   private Application _application;
   private Tracker _trafficTracker;
+  private String _siteId;
 
   @Override
   public void onAttachedToEngine(@NonNull FlutterPluginBinding flutterPluginBinding) {
@@ -44,7 +45,7 @@ public class MatomoTrackerPlugin implements FlutterPlugin, MethodCallHandler {
     if (call.method.equals("initializeTracker")) {
       Map<String, String> args = (Map<String, String>) call.arguments;
       String siteId = args.get("siteId");
-
+      _siteId = siteId;
       System.out.println("initializeTracker"+siteId);
       initTraffic(siteId);
 
@@ -106,6 +107,7 @@ public class MatomoTrackerPlugin implements FlutterPlugin, MethodCallHandler {
               .screen(urlStr.length()> 0 ? urlStr : "")
               .title(title)
               .with(tracker);
+      System.out.println("页面screen"+title);
       tracker.dispatch();
     } catch (Throwable e){
       e.printStackTrace();
@@ -151,7 +153,8 @@ public class MatomoTrackerPlugin implements FlutterPlugin, MethodCallHandler {
 
   // 294
   public TrackerBuilder onCreateTrackerConfig() {
-    return TrackerBuilder.createDefault(294);
+    System.out.println("onCreateTrackerConfig"+_siteId);
+    return TrackerBuilder.createDefault(Integer.valueOf(_siteId).intValue());
   }
   @Override
   public void onDetachedFromEngine(@NonNull FlutterPluginBinding binding) {
