@@ -135,11 +135,11 @@ public class MatomoTrackerPlugin implements FlutterPlugin, MethodCallHandler {
   public void setUserId(String userId) {
     try {
       Tracker tracker = getTracker();
-      String deviceId = UUID.randomUUID().toString();
-      if (deviceId.length() > 16) {
-        deviceId = deviceId.substring(0, 16);
-      }
-      tracker.setVisitorId(deviceId);
+//      String deviceId = UUID.randomUUID().toString();
+//      if (deviceId.length() > 16) {
+//        deviceId = deviceId.substring(0, 16);
+//      }
+//      tracker.setVisitorId(deviceId);
       if (userId != null){
         tracker.setUserId(userId);
       }
