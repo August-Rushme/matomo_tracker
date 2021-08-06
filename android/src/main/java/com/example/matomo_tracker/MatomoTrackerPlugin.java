@@ -44,6 +44,8 @@ public class MatomoTrackerPlugin implements FlutterPlugin, MethodCallHandler {
     if (call.method.equals("initializeTracker")) {
       Map<String, String> args = (Map<String, String>) call.arguments;
       String siteId = args.get("siteId");
+
+      System.out.println("initializeTracker"+siteId);
       initTraffic(siteId);
 
     }else if(call.method.equals("trackScreen")){
