@@ -1,5 +1,5 @@
 name: matomo_tracker_example
-description: Demonstrates how to use the matomo_tracker plugin.
+description: "Demonstrates how to use the matomo_tracker plugin."
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
