@@ -1,7 +1,7 @@
 name: matomo_tracker
-description: "matomo 统计库"
-version: "0.0.1"
-homepage: "https://github.com/ChaoYuW/matomo_tracker"
+description: "Matomo 统计库"
+version: 0.0.1
+homepage: https://github.com/ChaoYuW/matomo_tracker
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
